@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vaibhav | My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">My Portfolio</a>
+
+        <button class="menu-btn" id="menuToggle"
+                aria-label="Open navigation menu">☰</button>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home -->
+<section id="home" class="home">
+    <div class="home-content reveal">
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hello, I'm <span>Vaibhav V Bharadwaj</span></h1>
+
+        <h2>BCA Student | Web Developer</h2>
+
+        <p>
+            I am passionate about programming, web development,
+            database management and creating innovative applications.
+            Welcome to my personal portfolio!
+        </p>
+
+        <div class="home-buttons">
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="profile reveal">
+        <img src="images/vb1.jpg" alt="Vaibhav Profile Photo">
+    </div>
+</section>
+
+<!-- About Me -->
+<section id="about" class="about section">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-content reveal">
+        <p>
+            I am a Bachelor of Computer Applications (BCA) student
+            interested in software development and modern technologies.
+
+            I enjoy developing websites and applications using
+            HTML, CSS, JavaScript, PHP and MySQL.
+
+            My goal is to improve my programming skills and build
+            useful real-world projects.
+        </p>
+
+        <h3>My Technical Skills</h3>
+
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>AI&ML</span>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects section">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="project-container">
+
+        <!-- Project 1 -->
+        <div class="project-box reveal">
+            <div class="project-icon">💰</div>
+
+            <h3>Money Management</h3>
+
+            <p>
+                A personal finance management application designed
+                to manage daily income, expenses, savings and
+                financial records.
+            </p>
+
+            <p class="tech">PHP | MySQL | HTML | CSS</p>
+
+            <a href="moneymanagement/index.php"
+               class="btn" target="_blank" rel="noopener">
+                View Project →
+            </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box reveal">
+            <div class="project-icon">🏦</div>
+
+            <h3>Bank IFSC Finder</h3>
+
+            <p>
+                A web application that helps users search bank
+                IFSC codes and find bank branch information.
+            </p>
+
+            <p class="tech">PHP | MySQL | HTML | CSS</p>
+
+            <a href="BankIFSC/adminlogin.php"
+               class="btn" target="_blank" rel="noopener">
+                View Project →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates" class="certificates section">
+    <h2 class="heading">My <span>Certificates</span></h2>
+
+    <div class="certificate-container">
+
+        <!-- Certificate 1 -->
+        <div class="certificate-box reveal">
+            <img src="images/ibm.jpg" alt="IBM Certificate">
+
+            <h3>IBM Certificate</h3>
+
+            <p>Professional learning and certification.</p>
+
+            <a href="images/ibm.jpg"
+               class="btn" target="_blank" rel="noopener">
+                View Certificate →
+            </a>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-box reveal">
+            <img src="images/infosys.jpg" alt="Infosys Certificate">
+
+            <h3>Infosys Certificate</h3>
+
+            <p>Professional learning and certification.</p>
+
+            <a href="images/infosys.jpg"
+               class="btn" target="_blank" rel="noopener">
+                View Certificate →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact section">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <p class="contact-intro">
+        Have a project idea or want to connect? Send me a message.
+    </p>
+
+    <form id="contactForm">
+
+        <input type="text" id="name"
+               placeholder="Enter Your Name" required>
+
+        <input type="email" id="email"
+               placeholder="Enter Your Email" required>
+
+        <textarea id="message"
+                  placeholder="Write Your Message"
+                  rows="6" required></textarea>
+
+        <button type="submit" class="btn">
+            Send Message →
+        </button>
+
+    </form>
+
+    <div class="social-links">
+        <a href="https://github.com/gamerway"
+           target="_blank" rel="noopener">
+            GitHub Profile
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>
+        © <span id="year"></span>
+        Vaibhav V Bharadwaj | All Rights Reserved
+    </p>
+</footer>
+
+</body>
+</html>
